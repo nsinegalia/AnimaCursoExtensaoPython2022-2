@@ -1,23 +1,34 @@
-# Meu primeiro projeto Python!!!
-#
-# print() = comando de saida
-'''
-Comentário em bloco
+# comando input(): quero permitir que
+# o usuário digite algo...
+nome = input("Digite seu nome: ")
+#pede a idade para o usuário "Qual sua idade?"
+idade = int(input("Digite sua idade: "))
 
-'''
-print('Alo mundo!')
+#comando de saída..exibir na tela
+print(f"Boa noite, seu nome é {nome}")
+#exiba "Sua idade é ..."
+print("Sua idade é {}".format(idade))
 
-# Quando quiser guardar uma String!
-nome = "Nicolas Sinegalia"
-# Quando quiser guardar um número inteiro
-idade = 23
+#e se eu quisesse mostrar o DOBRO da idade informada?
+dobro = idade * 2
+print("O dobro da idade informada é {}".format(dobro))
 
-#Exibir o meu nome que está na variável
-#Quando quiser exibir frase + variável
-print("O seu nome é " + nome) #string
-print("A sua idade é "+str(idade)) #int
-print(f"A sua idade é {idade} anos \n") #int
-print("Minha idade é {} anos".format(idade))
+#Estrutura condicional - o famoso "SE" (if)
+#Se a pessoa for maior de idade, mostre "Você é maior de idade, ótimo! Já pode beber ou dirigir"
+if idade >= 18:
+  print("Você é maior de idade, ótimo! Já pode beber ou dirigir")
+else:
+  print("Você é xóven ainda, xóven ainda...")
 
-#Quando quiser exibir nome + idade
-print ("Meu nome é {} e tenho {} anos".format(nome,idade))
+#E se eu quisessem perguntar o gênero (M = Masculino e F = Feminino)
+#Mostre (...e você também precisa/precisou prestar o serviço militar obrigatório)
+genero = input("Informe o gênero M=Masculino, F=Feminino, O=Outros: ")
+if idade >= 18 and genero == "M":
+  print("... e você também precisa/precisou prestar o serviço militar obrigatório")
+
+
+
+
+
+
+print("vai ser executada de qualquer jeito")
