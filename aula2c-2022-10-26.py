@@ -1,4 +1,4 @@
-#Exemplo de laço
+-#Exemplo de laço
 
 #Se eu quisesse exibir números de 1 a 10?
 print("Aqui mostramos de maneira 'rústica'")
